@@ -1,0 +1,146 @@
+@import url("variable.css");
+@import url("style.css");
+
+hr {
+  background-color: rgb(221, 221, 221);
+  width: 2px;
+  border: none;
+  height: calc(100vh / 2);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 0px 20px;
+  overflow-y: auto;
+}
+
+.section__header {
+  position: fixed;
+  z-index: 9999;
+  text-transform: capitalize;
+  font-size: 2rem;
+  border-bottom: 2px solid blue;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  width: 40%;
+}
+
+.section__header h1 {
+  margin: 0px auto;
+  color: var(--primeColor);
+  padding: 10px 0px;
+}
+
+.section__cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 120px;
+}
+
+.figure {
+  width: calc((100% / 2) - 20px);
+  margin-right: 20px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  overflow: hidden;
+  border-bottom: 2px solid var(--primeColor);
+}
+
+.figure__figcaption {
+  padding: 0px 20px;
+}
+
+.figure img {
+  width: 100%;
+  height: auto;
+}
+
+.figure__figcaption--data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0px;
+  margin-bottom: 20px;
+}
+
+.figure__figcaption--data span {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  font-size: 15px;
+}
+
+.figure__figcaption--data span:nth-child(2) {
+  background-color: var(--primeColor);
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.figure__figcaption p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 17px;
+}
+
+.figure__figcaption--span {
+  display: block;
+  font-weight: 100;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.figure__figcaption a {
+  display: block;
+  background-color: var(--primeColor);
+  color: white;
+  width: fit-content;
+  padding: 7px 20px;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.figure__figcaption a:hover {
+  opacity: 0.8;
+}
+
+.figure__figcaption a span:nth-child(2) {
+  font-size: 1rem;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0px;
+  padding: 20px 30px;
+}
+
+.footer__btn a {
+  opacity: 0.3;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+  transition: 0.2s ease-out;
+  text-align: center;
+}
+
+.footer__btn a:hover {
+  opacity: 1;
+  color: var(--primeColor);
+}
+
+.footer__btn--prev .one,
+.footer__btn--next .two {
+  font-size: 1.5rem;
+}
