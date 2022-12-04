@@ -20,7 +20,7 @@ hr {
   position: fixed;
   z-index: 9999;
   text-transform: capitalize;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-bottom: 2px solid blue;
   border-radius: 10px;
   margin-bottom: 40px;
