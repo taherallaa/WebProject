@@ -3,8 +3,14 @@
 
 
 .aside {
-  width: 45%;
+  width: 400px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+
 }
 
 .aside__header a {
@@ -32,7 +38,7 @@
   text-transform: capitalize;
   letter-spacing: .3px;
   line-height: 25px;
-
+  width: 100%;
   margin-bottom: 40px;
 }
 
@@ -90,4 +96,13 @@ section {
 header {
   display: flex;
   flex-direction: row;
+}
+
+@media only screen and (max-width: 1050px) {
+  .aside {
+    width: 100%;
+  }
+  .aside__header p {
+    width: 100%;
+  }
 }
